@@ -187,6 +187,7 @@ svg {
         right: 0;
         left: initial;
         top: 80px;
+        transform: scale(.9);
     }
 
     .input-section {
