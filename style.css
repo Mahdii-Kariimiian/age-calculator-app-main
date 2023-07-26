@@ -116,7 +116,9 @@ body {
 .invalid {
     position:absolute;
     font-size: .45rem;
-    color: var(--Lightred)
+    color: var(--Lightred);
+    font-size: .5rem;
+    white-space: nowrap;
 }
 
 .hidden {
@@ -175,6 +177,7 @@ svg {
         display: block;
         max-width: 500px;
         text-align: left;
+        transform: scale(1.2)
     }
 
     .input {
