@@ -8,7 +8,7 @@ link on site: (https://www.frontendmentor.io/challenges/age-calculator-app-dF9DF
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-      [Desktop design] (#Desktop design )
+      [Desktop design](#Desktop-design )
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
