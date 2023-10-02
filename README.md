@@ -18,7 +18,16 @@ link on site: (https://www.frontendmentor.io/challenges/age-calculator-app-dF9DF
 This application takes the date of  one's birth and calculates their age
 
 ### Screenshot
-
+# Desktop design 
+![Desktop design](https://github.com/Mahdii-Kariimiian/age-calculator-app-main/assets/134393975/04e1fd11-2bf7-472c-a5fa-8a45bcd30c18)
+# Mobile design
+![Mobile design](https://github.com/Mahdii-Kariimiian/age-calculator-app-main/assets/134393975/87c89bb4-b42e-4d3b-baf8-df11deb282a3)
+# Calculate age 
+![calculate age](https://github.com/Mahdii-Kariimiian/age-calculator-app-main/assets/134393975/755c745c-ee7e-4e5a-86ab-7eddbbf528a5)
+# Empty inputs alert
+![Empty inputs](https://github.com/Mahdii-Kariimiian/age-calculator-app-main/assets/134393975/c01ade28-fdd3-4580-8094-9fbd90221860)
+# Invalid inputs alert 
+ ![invalid inputs](https://github.com/Mahdii-Kariimiian/age-calculator-app-main/assets/134393975/f1506a8f-790c-4310-986b-5c5cdd8b2d14)
 
 
 ### Links
