@@ -45,7 +45,7 @@ To calculate the years, months and days of a person's life, I first calculated t
 ### What I used
 
 Here is a glimps of what I used to built this mini project.
-
+````
 CSS
 ## for removing arrows in number inputs 
 
