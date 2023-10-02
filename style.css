@@ -1,3 +1,4 @@
+/* Reset */
 * {
     box-sizing: border-box;
 }
@@ -6,13 +7,12 @@
 
 :root {
 
---Purple: hsl(259, 100%, 65%);
+--Purple: #854dff;
 --Lightred: hsl(0, 100%, 67%);
-
 --White: hsl(0, 0%, 100%);
---Offwhite: hsl(0, 0%, 94%);
---Lightgrey: hsl(0, 0%, 86%);
---Smokeygrey: hsl(0, 1%, 44%);
+--lightpurple: hsl(259, 94%, 72%);
+--Lightgrey: hsl(0, 3%, 53%);
+--Smokeygrey: hsl(0, 0%, 20%);
 --Offblack: hsl(0, 0%, 8%);
 }
 
@@ -36,18 +36,14 @@
     align-items: center;
 }
 
-
-
 /* main */
 
 body {
     font-family: 'Poppins', sans-serif;
     Font-size: 32px;
-
     height: 100vh;
-
-    background-color: var(--Offwhite);
-
+    background-color: var(--lightpurple);
+    background-image: url(/assets/images/background-\ magicpattern.png);
     margin:0;
 }
 
@@ -57,10 +53,8 @@ body {
     width: 90%;
     min-width: 330px;
     background-color: var(--White);
-
     margin: auto;
     padding: 1.5rem;
-
     border-radius: 20px 20px 80px 20px;
 }
 
@@ -96,6 +90,10 @@ body {
     cursor:pointer;
 }
 
+.input:hover {
+    background-color: var(--lightpurple);
+}
+
 .input-section {
     position:relative;
     margin-bottom: 100px;
@@ -109,7 +107,7 @@ body {
     height: 2.5px;
     top: 145px;
     left:0;
-    background-color: var(--Offwhite)
+    background-color: var(--lightpurple)
 }
 
 .alert,
@@ -117,14 +115,12 @@ body {
     position:absolute;
     font-size: .45rem;
     color: var(--Lightred);
-    font-size: .5rem;
     white-space: nowrap;
 }
 
 .hidden {
     display: none;
 }
-
 
 .svg {
     position: absolute;
@@ -170,7 +166,6 @@ svg {
     margin: 0;
 }
 
-
 @media (min-width:600px) {
 
     .container {
@@ -186,7 +181,7 @@ svg {
     }
 
     .svg {
-        right: 0;
+        right: -5px;
         left: initial;
         top: 80px;
         transform: scale(.9);

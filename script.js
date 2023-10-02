@@ -1,28 +1,32 @@
-/* vars */
-/* age vars */
+/* age variables */
 const dayInput = document.querySelector(".day-input")
 const monthInput = document.querySelector(".month-input")
 const yearInput = document.querySelector(".year-input")
 
-/* days of months */
+// days of months 
 const thirtyOne = [1 , 3 , 5 , 7 , 8 , 10 , 12]
 const thirty = [ 4 , 6 , 9 , 11]
 const twentyEight = [2]
 
-/* button */
+// button 
 const btn = document.querySelector(".button")
 
-/* outputs */
+// outputs 
 const dayOutput = document.querySelector(".day-result")
 const monthOutput = document.querySelector(".month-result")
 const yearOutput = document.querySelector(".year-result")
 
-/* click event */
+// clear inputs
+dayInput.value = "";
+monthInput.value = "";
+yearInput.value = "";
+
+// click event
 btn.addEventListener( "click" , ageCalculation )
 
-/* age calculator function */
+// age calculator function
 function ageCalculation() {
-    /* vars for empty inputs */
+    // variables for empty inputs 
     const dayTitleInput = document.querySelector(".day-title")
     const dayAlert = document.querySelector(".day-alert")
     const monthTitleInput = document.querySelector(".month-title")
@@ -30,30 +34,29 @@ function ageCalculation() {
     const yearTitleInput = document.querySelector(".year-title")
     const yearAlert = document.querySelector(".year-alert")
     
-    /* vars for invalid inputs */
+    // variables for invalid inputs 
     const monthInvalid = document.querySelector(".month-invalid")
     const yearInvalid = document.querySelector(".year-invalid")
     const dayInvalid = document.querySelector(".day-invalid")
-    /* input values */
-    /* day with zero for under 10  */
+
+    // input values 
+    // day with zero for numbers under 10
     const primaryDay = dayInput.value 
     const day = primaryDay <= 10 ? `0${primaryDay}` : primaryDay
     
-    /* month with zero for under 10  */
+    // month with zero for numbers under 10  
     const primaryMonth = monthInput.value
     const month = primaryMonth <= 10 ? `0${primaryMonth}` : primaryMonth
     
-    /* year */
+    // year 
     const year = yearInput.value
     
+    // Convert Date to milliseconds
     const birthdate = new Date(`${year} , ${month} , ${day}`);
     const birthMili =(birthdate.getTime());
     const now = Date.now();
-
     const miliseconds = now - birthMili
-
     const ageDif = new Date(miliseconds)
-
     const Y = Math.abs(ageDif.getFullYear() - 1970)
     const M = ageDif.getMonth()
     const D = ageDif.getDate()
@@ -63,8 +66,8 @@ function ageCalculation() {
     yearOutput.innerHTML = Y
 
     
-    /* empty and invalid inputs */
-    /* day */
+    // empty and invalid inputs 
+    // day 
     if (!dayInput.value) {
         dayTitleInput.style.color =  "hsl(0, 100%, 67%)"
         dayInput.style.backgroundColor = "hsl(0, 100%, 67%, 50%)"
@@ -100,7 +103,7 @@ function ageCalculation() {
         dayInvalid.classList.add("hidden")
     }
 
-    /* month */
+    // month 
     if (!monthInput.value) {
         monthTitleInput.style.color = "hsl(0, 100%, 67%)"
         monthInput.style.backgroundColor = "hsl(0, 100%, 67%, 50%)"
@@ -124,7 +127,7 @@ function ageCalculation() {
         monthInvalid.classList.add("hidden")
     }
 
-    /* year */
+    // year 
     if (!yearInput.value) {
         yearTitleInput.style.color =  "hsl(0, 100%, 67%)"
         yearInput.style.backgroundColor = "hsl(0, 100%, 67%, 50%)"
@@ -146,6 +149,6 @@ function ageCalculation() {
         yearInput.style.backgroundColor = "hsl(0, 0%, 100%)"
         yearAlert.classList.add("hidden")
         yearInvalid.classList.add("hidden")
-}
     }
+}
     
